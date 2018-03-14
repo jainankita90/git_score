@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    git_score (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httparty (0.16.1)
+      multi_xml (>= 0.5.2)
+    multi_xml (0.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  git_score!
+  httparty
+
+BUNDLED WITH
+   1.16.1
