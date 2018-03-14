@@ -21,19 +21,39 @@ CreateEvent = 2
 Any other event = 1 
 ```
 
-### Task
+### Issue1 - DHH Score
 
-Write a ruby program which when executed prints the score of https://github.com/dhh . 
+A ruby program which when executed prints the score of https://github.com/dhh . 
+
+Structure of git_score
+<pre>.
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── calculate_score.rb
+├── git_score.gemspec
+└── lib
+    ├── git_score
+    │   ├── score_rule.rb
+    │   ├── user_event.rb
+    │   └── version.rb
+    └── git_score.rb
 The answer printed on the terminal should be like this. 
 
-Calculate the score based on the data returned from only the first page of that API call. Do not worry about pagination.
-
+This has dependency on httparty gem. so please checkout from dhh_score branch and run 
 ```
-$ ruby exercise.rb
-DHH's github score is xxx
+$bundle install
+```
+or 
+```
+$gem install httparty
+```
+then run
+```
+$ ruby calculate_score.rb
+
+>> DHH's github score is xxx
 ```
 
 
-### What we are looking for
 
-https://gist.github.com/neerajdotname/b369449b85e6a634b12b
